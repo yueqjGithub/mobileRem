@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 625% !important;
+  }
+}
+
+body {
+  font-size: 12px;
+}
+
+/* flex公共类 */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-jst-start {
+  justify-content: flex-start;
+}
+.flex-jst-end {
+  justify-content: flex-end;
+}
+.flex-jst-center {
+  justify-content: center;
+}
+.flex-jst-between {
+  justify-content: space-between;
+}
+.flex-jst-around {
+  justify-content: space-around;
+}
+.flex-ali-start {
+  align-items: flex-start;
+}
+.flex-ali-end {
+  align-items: flex-end;
+}
+.flex-ali-center {
+  align-items: center;
+}
+.flex-self-start {
+  align-self: flex-start;
+}
+.flex-self-end {
+  align-self: flex-end;
+}
+.flex-self-center {
+  align-self: center;
+}
+.flex-ali-stretch {
+  align-items: stretch;
+}
+.flex-self-stretch {
+  align-self: stretch;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-no-wrap {
+  flex-wrap: nowrap;
+}
+/* 文字超出省略 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/*文字超出多行省略*/
+.ellipsis-2 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* 限制的行数 */
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+/*文字超出多行省略*/
+.ellipsis-3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* 限制的行数 */
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+.full-width{
+  width: 100%;
+}
+.h-100 {
+  height: 100vh;
+}
+
+/* 页面基础padding */
+.page-padding-default {
+  padding: 0.36rem;
+}
