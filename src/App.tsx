@@ -2,6 +2,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Routes from './router'
 // import { toAuth } from './utils/getAuth'
 import { useEffect } from 'react'
+import { RecoilRoot } from 'recoil'
 function App() {
   // const checkCode = () => {
   //   // 检测url中是否有code字段
@@ -29,11 +30,11 @@ function App() {
     }
   },[])
   return (
-    <>
+    <RecoilRoot>
       <Router>
         <Routes></Routes>
       </Router>
-    </>
+    </RecoilRoot>
   )
 }
 

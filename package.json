@@ -1,5 +1,6 @@
 {
-  "name": "investigation_030501",
+  "name": "active_page_ms",
+  "description": "active page for microsoft",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +14,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.11.2",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "recoil": "^0.7.7"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
