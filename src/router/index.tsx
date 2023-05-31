@@ -2,7 +2,6 @@ import { lazy, useEffect } from "react";
 import { RouteObject, useRoutes, useNavigate } from "react-router";
 import PageLayout from "../pageLayout";
 import LazyImportComponent from "../components/LazyImportComponent";
-import WxCheckPage from "../pages/wxCheck";
 const RedirectComponent = (props: { to: string }) => {
   const navigate = useNavigate()
   useEffect(() => {
@@ -19,22 +18,14 @@ const routeList: RouteObject[] = [
     element: <PageLayout></PageLayout>,
     children: [
       {
-        path: 'list',
-        element: <LazyImportComponent lazyChildren={lazy(() => import('../pages/230501/ListPage'))}></LazyImportComponent>
-      },
-      {
-        path: 'detail',
-        element: <LazyImportComponent lazyChildren={lazy(() => import('../pages/230501/DetailPage'))}></LazyImportComponent>
+        path: 'index',
+        element: <LazyImportComponent lazyChildren={lazy(() => import('../pages/HomePage'))}></LazyImportComponent>
       },
       {
         index: true,
-        element: <RedirectComponent to="/list"></RedirectComponent>
+        element: <RedirectComponent to="/index"></RedirectComponent>
       }
     ]
-  },
-  {
-    path: '/notwx',
-    element: <WxCheckPage></WxCheckPage>,
   },
   {
     path: '*',
